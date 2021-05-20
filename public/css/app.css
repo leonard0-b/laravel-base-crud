@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1 {
+  margin-bottom: 30px;
+}
+
+.home a {
+  color: lightcoral;
+}
+
+body {
+  background: #B2FEFA;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0ED2F7, #B2FEFA);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.index {
+  justify-content: center;
+  align-items: center;
+}
+
+.index .container {
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.index .container .news {
+  width: 100%;
+  color: lightseagreen;
+}
+
+.index .container .news h1 {
+  padding: 20px 0;
+  font-size: 50px;
+}
+
+.index .container .card {
+  width: calc(100% / 3 - 30px);
+  margin: 15px 15px;
+  height: 300px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0 20px 20px 0;
+  background-color: #F2FCFE;
+}
+
+.index .container .card:hover .w-50r > .title > h1 > a {
+  color: lightseagreen;
+}
+
+.index .container .card .w-50l {
+  border-radius: 0 20px 20px 0;
+  width: 50%;
+}
+
+.index .container .card .w-50l img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.index .container .card .w-50r {
+  width: 50%;
+  padding: 15px;
+  position: relative;
+}
+
+.index .container .card .w-50r .serie p {
+  font-size: 13px;
+}
+
+.index .container .card .w-50r .title {
+  position: absolute;
+  top: 80px;
+}
+
+.index .container .card .w-50r .title h1 {
+  font-size: 19px;
+}
+
+.index .container .card .w-50r .title h1 a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.5s;
+}
+
+.index .container .card .w-50r .price {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.index .container .card .w-50r .price p {
+  font-size: 11px;
+}
+
+.index .container .card .w-50r .details {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  text-decoration: none;
+  color: lightseagreen;
+  font-weight: 600;
+}
+

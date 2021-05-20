@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends("layouts.app")
 
-        <title>Laravel</title>
+@section("title")
+Welcome
+@endsection
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+@section("content")
+    <section class="flex home">
+        <h1>Mitici Fumettoni</h1>   
+        <a class="uppercase" href="{{route('comics.index')}}">-> fumetti <-</a>
+    </section>
+@endsection
 
-        <!-- Styles -->
-    </head>
-    <body>
-        <h1>Ciao</h1>   
-        <a href="{{route('comics.index')}}">fumetti</a>
-    </body>
-</html>
+

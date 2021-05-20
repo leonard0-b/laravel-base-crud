@@ -1,0 +1,84 @@
+body {
+    background: #B2FEFA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+
+.index {
+    justify-content: center;
+    align-items: center;
+    .container {
+        flex-wrap: wrap;
+        width: 70%;
+        .news {
+            width: 100%;
+            color: lightseagreen;
+            h1 {
+                padding: 20px 0;
+                font-size: 50px;
+            }
+        }
+        .card {
+            width: calc(100% / 3 - 30px);
+            margin: 15px 15px;
+            height: 300px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            border-radius: 0 20px 20px 0;
+            background-color: #F2FCFE;
+
+            &:hover .w-50r > .title > h1 > a {
+                color: lightseagreen;
+            }
+            .w-50l {
+                border-radius: 0 20px 20px 0;
+                width: 50%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 0 20px 20px 0;
+                    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                }
+            }
+            .w-50r {
+                width: 50%;
+                padding: 15px;
+                position: relative;
+                .serie {
+                    p {
+                        font-size: 13px;
+                    }
+                }
+                .title {
+                    position: absolute;
+                    top: 80px;
+                        h1 {
+                            font-size: 19px;
+                            a {
+                                text-decoration: none;
+                                color: #000;
+                                transition: color 0.5s;
+                            }
+                        }    
+                }
+                .price {
+                    position: absolute;
+                    bottom: 15px;
+                    left: 15px;
+                    p {
+                        font-size: 11px;
+                    }
+                }
+                .details {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+                    text-decoration: none;
+                    color: lightseagreen;
+                    font-weight: 600;
+                }
+                
+            }
+        }
+    }
+}

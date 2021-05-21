@@ -1,0 +1,45 @@
+.edit {
+    width: 60%;
+    height: 100vh;
+    margin: 0 auto;
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input {
+            width: 50%;
+            outline: 0;
+            margin: 10px 0;
+            padding: 30px 35px;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        &.edit-input {
+            font-weight: 600;
+            width: 10%;
+            padding: 15px 20px;
+            cursor: pointer;
+            color: mediumaquamarine;
+            background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
+            }
+        }
+        a {
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            color: lightseagreen;
+            background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+    }
+
+}
+
+::placeholder {
+    font-size: 15px;
+    color: hsl(180, 100%, 25%);
+}

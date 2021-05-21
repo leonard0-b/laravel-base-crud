@@ -2,7 +2,7 @@
     flex-direction: column;
     align-items: center;
     .card {
-        width: calc(100% / 3 - 30px);
+        width: calc(100% / 4 - 30px);
         margin: 15px 15px;
         height: 300px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -14,7 +14,6 @@
         }
         .w-50l {
             border-radius: 0 20px 20px 0;
-            width: 50%;
             img {
                 height: 100%;
                 width: 100%;
@@ -61,5 +60,30 @@
             }     
         }
     }
-    
+    .cmd {
+        a {
+            margin-right: 25px;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            color: mediumaquamarine;
+            background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+        .delete {
+            input {
+                cursor: pointer;
+                padding: 17px 20px;
+                border-radius: 10px; 
+                font-size: 15px;
+                color: #fff;
+                font-weight: 600;
+                border: 0;   
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                background: linear-gradient(to right, #e52d27, #b31217);
+            }
+        }
+    }
 }

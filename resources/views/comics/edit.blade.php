@@ -5,7 +5,7 @@ Edit
 @endsection
 
 @section("content")
-    <section class="create">
+    <section class="edit flex">
         <form action="{{route('comics.update', ['comic' => $comic->id])}}" method='post'>
             @csrf 
             @method('PATCH')
@@ -17,7 +17,8 @@ Edit
             <input type="text" name='sale_date' value='{{$comic->sale_date}}' placeholder='Date...'>
             <input type="text" name='type' value='{{$comic->type}}' placeholder='Type...'>
 
-            <input type="submit" name='Edit!' value='Edit!'>
+            <input class="edit-input" type="submit" name='Edit!' value='Edit!'>
+            <a href="{{route('comics.index')}}">Back</a>
         </form>
     </section>
 @endsection

@@ -226,13 +226,20 @@ body {
   position: relative;
 }
 
+.show .card .w-50r .description {
+  height: 60%;
+  overflow-y: scroll;
+  position: absolute;
+  top: 75px;
+}
+
 .show .card .w-50r .description p {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .show .card .w-50r .title {
   position: absolute;
-  top: 80px;
+  top: 20px;
 }
 
 .show .card .w-50r .title h1 {

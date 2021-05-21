@@ -19,10 +19,5 @@ Edit
 
             <input type="submit" name='Edit!' value='Edit!'>
         </form>
-        <form action="{{route('comics.destroy', ['comic' => $comic->id])}}" method='post'>
-        @csrf
-        @method('DELETE')
-        <input onclick="return confirm('Are you sure?')" type="submit" name='Delete :(' value='Delete :('>
-        </form>
     </section>
 @endsection

@@ -50,11 +50,29 @@ body {
 .index .container .news {
   width: 100%;
   color: lightseagreen;
+  align-items: center;
+  border-bottom: 1px solid lightseagreen;
 }
 
 .index .container .news h1 {
   padding: 20px 0;
   font-size: 50px;
+}
+
+.index .container .news a {
+  margin-left: auto;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: linear-gradient(to right, #0ED2F7, #B2FEFA);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: color 0.6s;
+  color: lightseagreen;
+}
+
+.index .container .news a:hover {
+  color: teal;
 }
 
 .index .container .card {
@@ -118,6 +136,126 @@ body {
 }
 
 .index .container .card .w-50r .details {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  text-decoration: none;
+  color: lightseagreen;
+  font-weight: 600;
+}
+
+.create {
+  width: 60%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.create form {
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.create form input {
+  width: 50%;
+  outline: 0;
+  margin: 10px 0;
+  padding: 30px 35px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.create form .send {
+  width: 10%;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: mediumaquamarine;
+  background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
+}
+
+::-moz-placeholder {
+  font-size: 15px;
+  color: teal;
+}
+
+:-ms-input-placeholder {
+  font-size: 15px;
+  color: teal;
+}
+
+::placeholder {
+  font-size: 15px;
+  color: teal;
+}
+
+.show {
+  flex-direction: column;
+  align-items: center;
+}
+
+.show .card {
+  width: calc(100% / 3 - 30px);
+  margin: 15px 15px;
+  height: 300px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0 20px 20px 0;
+  background-color: #F2FCFE;
+}
+
+.show .card:hover .w-50r > .title > h1 > a {
+  color: lightseagreen;
+}
+
+.show .card .w-50l {
+  border-radius: 0 20px 20px 0;
+  width: 50%;
+}
+
+.show .card .w-50l img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.show .card .w-50r {
+  width: 50%;
+  padding: 15px;
+  position: relative;
+}
+
+.show .card .w-50r .description p {
+  font-size: 13px;
+}
+
+.show .card .w-50r .title {
+  position: absolute;
+  top: 80px;
+}
+
+.show .card .w-50r .title h1 {
+  font-size: 19px;
+}
+
+.show .card .w-50r .title h1 a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.5s;
+}
+
+.show .card .w-50r .price {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.show .card .w-50r .price p {
+  font-size: 11px;
+}
+
+.show .card .w-50r .details {
   position: absolute;
   bottom: 15px;
   right: 15px;

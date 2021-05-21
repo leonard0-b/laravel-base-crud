@@ -6,7 +6,7 @@ Create
 
 @section("content")
     <section class="create">
-        <form action="{{route('comics.store')}}" method='post'>
+        <form action="{{route('comics.store')}}" method='post' class="flex">
             @csrf 
             @method('POST')
             <input type="text" name='title' value='' placeholder='Title...'>
@@ -17,7 +17,7 @@ Create
             <input type="text" name='sale_date' value='' placeholder='Date...'>
             <input type="text" name='type' value='' placeholder='Type...'>
 
-            <input type="submit" name='Send!' value='Send!'>
+            <input type="submit" name='Send!' value='Send!' class="send">
         </form>
     </section>
 @endsection

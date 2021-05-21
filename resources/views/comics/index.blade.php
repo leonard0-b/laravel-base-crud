@@ -7,9 +7,9 @@ Comics
 @section("content")
     <section class="index flex">
         <div class="container flex wrapper">
-            <div class="news">
+            <div class="news flex">
                 <h1>Ultimi Arrivi</h1>
-                <hr>
+                <a href="{{route('comics.create')}}">Send us your Comic!</a>
             </div>
             @foreach ($comics as $comic)
             <div class="card flex">
@@ -25,6 +25,5 @@ Comics
             </div>
             @endforeach
         </div>
-        <a href="{{route('comics.create')}}">Send us your Comic!</a>
     </section>
 @endsection

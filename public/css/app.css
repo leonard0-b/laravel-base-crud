@@ -151,6 +151,31 @@ body {
   height: 100vh;
 }
 
+.create .alert-danger {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.create .alert-danger ul {
+  list-style: none;
+}
+
+.create .alert-danger ul li {
+  text-align: center;
+  font-size: 15px;
+  color: teal;
+}
+
+.create .alert-danger ul li.big {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #2196f3;
+  font-weight: 700;
+}
+
 .create form {
   flex-direction: column;
   justify-content: center;
@@ -168,12 +193,27 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.create form .send {
-  width: 10%;
+.create form div .send {
+  width: 35%;
   padding: 15px 20px;
   cursor: pointer;
   color: mediumaquamarine;
   background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
+}
+
+.create form div .back {
+  margin-right: 25px;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: mediumaquamarine;
+  background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: #64b5f6;
+  margin-left: 25px;
+  background: linear-gradient(to right bottom, #2196f3, #1f8eeb, #1d86e3, #1b7eda, #1976d2);
 }
 
 ::-moz-placeholder {
@@ -194,81 +234,49 @@ body {
 .show {
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.show .card {
-  width: calc(100% / 4 - 30px);
-  margin: 15px 15px;
-  height: 300px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 0 20px 20px 0;
-  background-color: #F2FCFE;
-}
-
-.show .card:hover .w-50r > .title > h1 > a {
-  color: lightseagreen;
-}
-
-.show .card .w-50l {
-  border-radius: 0 20px 20px 0;
-}
-
-.show .card .w-50l img {
-  height: 100%;
-  width: 100%;
-  border-radius: 0 20px 20px 0;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-.show .card .w-50r {
-  width: 50%;
-  padding: 15px;
+.show .container {
   position: relative;
+  width: 80%;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.show .card .w-50r .description {
-  height: 60%;
-  overflow-y: scroll;
+.show .container .w-50l {
   position: absolute;
-  top: 75px;
+  top: -100px;
+  left: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-size: 0;
 }
 
-.show .card .w-50r .description p {
-  font-size: 12px;
+.show .container .w-50l img {
+  border-radius: 10px;
+  height: 100%;
 }
 
-.show .card .w-50r .title {
+.show .container .w-50r {
+  padding: 70px;
+  margin-left: 250px;
+}
+
+.show .container .w-50r .title {
+  margin-bottom: 20px;
+}
+
+.show .container .w-50r .price {
   position: absolute;
-  top: 20px;
-}
-
-.show .card .w-50r .title h1 {
-  font-size: 19px;
-}
-
-.show .card .w-50r .title h1 a {
-  text-decoration: none;
-  color: #000;
-  transition: color 0.5s;
-}
-
-.show .card .w-50r .price {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-}
-
-.show .card .w-50r .price p {
-  font-size: 11px;
-}
-
-.show .card .w-50r .details {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  text-decoration: none;
-  color: lightseagreen;
-  font-weight: 600;
+  bottom: 20px;
+  right: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  color: teal;
 }
 
 .show .cmd a {
@@ -281,6 +289,12 @@ body {
   color: mediumaquamarine;
   background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.show .cmd a.back {
+  color: #64b5f6;
+  margin-left: 25px;
+  background: linear-gradient(to right bottom, #2196f3, #1f8eeb, #1d86e3, #1b7eda, #1976d2);
 }
 
 .show .cmd .delete input {
@@ -319,25 +333,26 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.edit form input.edit-input {
-  font-weight: 600;
-  width: 10%;
+.edit form div .edit-input {
+  width: 39%;
   padding: 15px 20px;
   cursor: pointer;
   color: mediumaquamarine;
   background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
 }
 
-.edit form a {
+.edit form div .back {
   text-decoration: none;
   padding: 15px 20px;
   border-radius: 10px;
   font-size: 15px;
   font-weight: 600;
-  color: lightseagreen;
-  background: linear-gradient(to right, #0ED2F7, #B2FEFA);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: mediumaquamarine;
+  background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: #64b5f6;
+  margin-left: 25px;
+  background: linear-gradient(to right bottom, #2196f3, #1f8eeb, #1d86e3, #1b7eda, #1976d2);
 }
 
 ::-moz-placeholder {

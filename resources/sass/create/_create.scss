@@ -1,4 +1,25 @@
 .create {
+    .alert-danger {
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 15px;
+        background-color: rgba(256, 256, 256 , 0.3);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        ul {
+            list-style: none;
+            li {
+                text-align: center;
+                font-size: 15px;
+                color: hsl(180, 100%, 25%);
+                &.big {
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    color: #2196f3;
+                    font-weight: 700;
+                }            
+            }
+        }
+    }
     width: 60%;
     margin: 0 auto;
     height: 100vh;
@@ -16,12 +37,28 @@
             border-radius: 10px;
             box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
-        .send {
-            width: 10%;
-            padding: 15px 20px;
-            cursor: pointer;
-            color: mediumaquamarine;
-            background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
+        div {
+            .send {
+                width: 35%;
+                padding: 15px 20px;
+                cursor: pointer;
+                color: mediumaquamarine;
+                background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
+            }
+            .back {
+                margin-right: 25px;
+                text-decoration: none;
+                padding: 15px 20px;
+                border-radius: 10px;
+                font-size: 15px;
+                font-weight: 600;
+                color: mediumaquamarine;
+                background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                color: #64b5f6;
+                margin-left: 25px;
+                background: linear-gradient(to right bottom, #2196f3, #1f8eeb, #1d86e3, #1b7eda, #1976d2);
+            }             
         }
     }
 }

@@ -16,24 +16,28 @@
             border: 0;
             border-radius: 10px;
             box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        &.edit-input {
-            font-weight: 600;
-            width: 10%;
-            padding: 15px 20px;
-            cursor: pointer;
-            color: mediumaquamarine;
-            background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
-            }
         }
-        a {
-            text-decoration: none;
-            padding: 15px 20px;
-            border-radius: 10px;
-            font-size: 15px;
-            font-weight: 600;
-            color: lightseagreen;
-            background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        div {
+            .edit-input {
+                width: 39%;
+                padding: 15px 20px;
+                cursor: pointer;
+                color: mediumaquamarine;
+                background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
+            }
+            .back {
+                text-decoration: none;
+                padding: 15px 20px;
+                border-radius: 10px;
+                font-size: 15px;
+                font-weight: 600;
+                color: mediumaquamarine;
+                background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                color: #64b5f6;
+                margin-left: 25px;
+                background: linear-gradient(to right bottom, #2196f3, #1f8eeb, #1d86e3, #1b7eda, #1976d2);
+            }             
         }
     }
 

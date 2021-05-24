@@ -1,67 +1,41 @@
 .show {
     flex-direction: column;
     align-items: center;
-    .card {
-        width: calc(100% / 4 - 30px);
-        margin: 15px 15px;
-        height: 300px;
+    justify-content: center;
+    height: 100vh;
+    .container {
+        position: relative;
+        width: 80%;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        background-color: rgba(256, 256, 256, 0.3);
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        border-radius: 0 20px 20px 0;
-        background-color: #F2FCFE;
-
-        &:hover .w-50r > .title > h1 > a {
-            color: lightseagreen;
-        }
         .w-50l {
-            border-radius: 0 20px 20px 0;
+            position: absolute;
+            top: -100px;
+            left: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            font-size: 0;
             img {
+                border-radius: 10px;
                 height: 100%;
-                width: 100%;
-                border-radius: 0 20px 20px 0;
-                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
             }
         }
         .w-50r {
-            width: 50%;
-            padding: 15px;
-            position: relative;
-            .description {
-                height: 60%;
-                overflow-y: scroll;
-                position: absolute;
-                top: 75px;
-                p {
-                    font-size: 12px;
-                }
-            }
+            padding: 70px;
+            margin-left: 250px;
             .title {
-                position: absolute;
-                top: 20px;
-                    h1 {
-                        font-size: 19px;
-                        a {
-                            text-decoration: none;
-                            color: #000;
-                            transition: color 0.5s;
-                        }
-                    }    
+                margin-bottom: 20px;
             }
             .price {
                 position: absolute;
-                bottom: 15px;
-                left: 15px;
-                p {
-                    font-size: 11px;
-                }
+                bottom: 20px;
+                right: 30px;
+                font-size: 15px;
+                font-weight: 700;
+                color: teal;
             }
-            .details {
-                position: absolute;
-                bottom: 15px;
-                right: 15px;
-                text-decoration: none;
-                color: lightseagreen;
-                font-weight: 600;
-            }     
         }
     }
     .cmd {
@@ -75,6 +49,11 @@
             color: mediumaquamarine;
             background: linear-gradient(to right bottom, #008080, #008894, #0090a8, #0098bc, #0c9ecf);
             box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            &.back {
+                color: #64b5f6;
+                margin-left: 25px;
+                background: linear-gradient(to right bottom, #2196f3, #1f8eeb, #1d86e3, #1b7eda, #1976d2);
+            }
         }
         .delete {
             input {

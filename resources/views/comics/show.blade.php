@@ -6,14 +6,14 @@ Details
 
 @section("content")
     <section class="show flex">
-        <div class="card flex">
+        <div class="container flex">
             <div class="w-50l">
                 <img src="{{$comic->thumb}}" alt="">
             </div>
             <div class="w-50r">
                 <div class="title"><h1>{{$comic->title}}</h1></div>
                 <div class="description"><p>{{$comic->description}}</p></div>
-                <div class="price"><p>{{$comic->price}}$</p></div>
+                <div class="price"><p>Price: {{$comic->price}}$</p></div>
             </div>
         </div>
         <div class="cmd flex">
@@ -25,7 +25,7 @@ Details
                 <input onclick="return confirm('Are you sure?')" type="submit" name='Delete :(' value='Delete :('>
                 </form>
             </div> 
+            <a class="back" href="{{route('comics.index')}}">Back</a>         
         </div>
-        <a href="{{route('comics.index')}}">Back</a>         
     </section>
 @endsection

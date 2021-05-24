@@ -1,14 +1,15 @@
 @extends("layouts.app")
 
 @section("title")
-Create
+Your Comic
 @endsection
 
 @section("content")
     <section class="create">
     @if ($errors->any())
-        <div class='alert-danger'>
+        <div class="alert-danger">
             <ul>
+                <li class="big">error:</li>
                 @foreach ($errors->all() as $error)
                     <li>{{$error}}</li>
                 @endforeach
@@ -25,8 +26,10 @@ Create
             <input type="text" name='series' value='' placeholder='Series...'>
             <input type="text" name='sale_date' value='' placeholder='Date...'>
             <input type="text" name='type' value='' placeholder='Type...'>
-
-            <input type="submit" name='Send!' value='Send!' class="send">
+            <div>
+                <input type="submit" name='Send!' value='Send!' class="send">
+                <a class="back" href="{{route('comics.index')}}">Back</a>         
+            </div>
         </form>
     </section>
 @endsection

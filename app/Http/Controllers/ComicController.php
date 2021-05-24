@@ -95,11 +95,11 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        $request->validate([
+            $request->validate([
             'title' => 'required|string',
             'description' => 'required|string',
             'thumb'=> 'string',
-            'price' => 'required|integer',
+            'price' => 'required|numeric',
             'series' => 'required|string',
             'sales_date' => 'string',
             'type' => 'required|string'

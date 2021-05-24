@@ -6,6 +6,15 @@ Create
 
 @section("content")
     <section class="create">
+    @if ($errors->any())
+        <div class='alert-danger'>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
         <form action="{{route('comics.store')}}" method='post' class="flex">
             @csrf 
             @method('POST')

@@ -24,7 +24,7 @@ Your Comic
             <input type="text" name='thumb' value='' placeholder='Cover...'>
             <input type="number" name='price' value='' placeholder='Price...'>
             <input type="text" name='series' value='' placeholder='Series...'>
-            <input type="text" name='sale_date' value='' placeholder='Date...'>
+            <input type="date" name='sale_date' value='' placeholder='Date...'>
             <input type="text" name='type' value='' placeholder='Type...'>
             <div>
                 <input type="submit" name='Send!' value='Send!' class="send">

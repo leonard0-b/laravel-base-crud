@@ -184,6 +184,7 @@ body {
 }
 
 .create form input {
+  color: teal;
   width: 50%;
   outline: 0;
   margin: 10px 0;
@@ -324,6 +325,7 @@ body {
 }
 
 .edit form input {
+  color: teal;
   width: 50%;
   outline: 0;
   margin: 10px 0;

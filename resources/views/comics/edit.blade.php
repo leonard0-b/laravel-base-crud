@@ -24,7 +24,7 @@ Edit
             <input type="text" name='thumb' value='{{$comic->thumb}}' placeholder='Cover...'>
             <input type="number" name='price' value='{{$comic->price}}' placeholder='Price...'>
             <input type="text" name='series' value='{{$comic->series}}' placeholder='Series...'>
-            <input type="text" name='sale_date' value='{{$comic->sale_date}}' placeholder='Date...'>
+            <input type="date" name='sale_date' value='{{$comic->sale_date}}' placeholder='Date...'>
             <input type="text" name='type' value='{{$comic->type}}' placeholder='Type...'>
             <div>
                 <input class="edit-input" type="submit" name='Edit!' value='Edit!'>

@@ -40,10 +40,10 @@ class ComicController extends Controller
         $request->validate([
             'title' => 'required|unique:comics|string',
             'description' => 'required|string',
-            'thumb'=> 'string',
+            'thumb'=> 'nullable|string',
             'price' => 'required|integer',
             'series' => 'required|string',
-            'sales_date' => 'string',
+            'sales_date' => 'date',
             'type' => 'required|string'
         ]);
 
@@ -98,10 +98,10 @@ class ComicController extends Controller
             $request->validate([
             'title' => 'required|string',
             'description' => 'required|string',
-            'thumb'=> 'string',
+            'thumb'=> 'nullable|string',
             'price' => 'required|numeric',
             'series' => 'required|string',
-            'sales_date' => 'string',
+            'sales_date' => 'date',
             'type' => 'required|string'
         ]);
 
